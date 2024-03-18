@@ -15,7 +15,8 @@
     <script>
         var href = window.location.href;
         $("a[href='" + href + "']").attr("class", "nav-link active");
-        var className = $("a[href='" + filename + "']").attr("class");
+        var className = $("a[href='" + href + "']").attr("class");
+        console.log(href);
         console.log(className);
     </script>
 </body>
