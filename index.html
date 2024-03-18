@@ -14,7 +14,9 @@
     <script src="nav.js"></script>
     <script>
         var pathname = window.location.pathname;
-        console.log(pathname);
+        var index = pathname.lastIndexOf("/") + 1;
+        var filename = pathname.substr(index);
+        $("a[href='" + pathname + "']").attr("class", "nav-link active");
     </script>
 </body>
 </html>
