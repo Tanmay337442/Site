@@ -1,7 +1,9 @@
 $("#nav-placeholder").load("nav.html");
+
 $(document).ready(function(){
-    $(".nav-link").attr("class", "nav-link");
-    $(this).attr("class", "nav-link active");
+    var pathname = window.location.pathname;
+    $(".nav-link active").attr("class", "nav-link");
+    $("a[href='" + pathname + "']").attr("class", "nav-link active");
 });
-const element = document.getElementsByClassName("nav-link active");
-console.log(element);
+
+console.log(pathname)
