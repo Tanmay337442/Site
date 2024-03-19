@@ -13,10 +13,8 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="nav.js"></script>
     <script>
-        var href = window.location.href;
-        $("a[href='" + href + "']").attr("class", "nav-link active");
+        $("a[href='index.html']").attr("class", "nav-link active");
         var className = $("a[href='" + href + "']").attr("class");
-        console.log(href);
         console.log(className);
     </script>
 </body>
