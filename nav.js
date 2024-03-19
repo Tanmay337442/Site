@@ -3,6 +3,6 @@ $(document).ready(function() {
     var active = $('a.active');
     console.log(active);
     $('a.active').removeClass('active').removeAttr('aria-current');
-    $('a[href="' + window.location.href + '"]').addClass('active').attr('aria-current', 'page');
-    console.log(window.location.href);
+    $('a[href="' + location.href + '"]').addClass('active').attr('aria-current', 'page');
+    console.log(location.href);
 });
